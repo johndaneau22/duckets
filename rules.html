@@ -7,6 +7,25 @@
         background: white;
     }
 
+    .column {
+        float: left;
+    }
+
+    .left,
+    .right {
+        width: 25%;
+    }
+
+    .middle {
+        width: 50%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
     .button {
         border: none;
         color: rgb(240, 20, 20);
@@ -19,39 +38,258 @@
         cursor: pointer;
     }
 
-</style>
+    .index {
+        border: 2px solid rgba(104, 148, 52, 255);
+        background-color: rgba(131, 191, 79, .3);
+        width: 400px;
+        text-align: left;
+    }
 
-<div class="header">
-    <h1>Y'all Got Duckets I Can Borrow </h1>
-    <h1>Rulebook</h1>
-    <h3>Revised: August 2022</h3>
-</div>
+    ;
+</style>
+<header>
+    <div class="row">
+        <div class="column left">
+            <center><img src="images/moneybag.png"></center>
+        </div>
+        <div class="column middle">
+            <div class="header">
+                <h1>Y'all Got Duckets I Can Borrow </h1>
+                <h1>Rulebook</h1>
+                <h3>Revised: August 2022</h3>
+            </div>
+        </div>
+        <div class="column right">
+            <center><img src="images/moneybag.png"></center>
+        </div>
+    </div>
+</header>
+</br>
+
+
 
 <body>
-    <h1></h1>
-    <p>Each year millions of people play fantasy football. 
-        They spend hours looking over data and trying to find any advantage they can over their friends and co-workers. Glory and bragging rights are at stake!</p>
-    <p>Trying to forecast which players will boom and bust for the upcoming season can have you feeling like the Zack Galinfakis meme.</p>
-    <center><img src="https://c.tenor.com/-uLXT5oNVtMAAAAC/what-forcasting-feels-like-zach-galifianakis.gif"></center>
-    <p>One of the key data points I've used in the past has been an efficiency ratio of Fantasy Points per Touch. As any experienced fantasy player would tell you,
-        touches are key to racking up points. The more opportunity a player gets by getting a rush or getting thrown the ball then the more likely they are to racking
-        up points and helping your fantasy team win. We will see on the following charts that this general trend is true: more touches has a strong correlation to more points.
+    <center>
+        <div class="index">
+            <h2 style="text-align: center;">Contents</h2>
+            <ol type="A">
+                <li><a href="#Ownership">Ownership</a>
+                    <ol type="1">
+                        <li><a href="#New Owners">New Owners</a></li>
+                        <li><a href="#Expelling Owners">Expelling Owners</a></li>
+                    </ol>
+                </li>
+                <li><a href="#Buy-in and Prize Payouts">Buy-in and Prize Payouts</a></li>
+                <li><a href="#League Settings">League Settings</a>
+                    <ol type="1">
+                        <li><a href="#Basic Settings">Basic Settings</a></li>
+                        <li><a href="#Rosters">Rosters</a></li>
+                        <li><a href="#Scoring">Scoring</a></li>
+                        <li><a href="#Transactions">Transactions</a></li>
+                        <li><a href="#Schedule and Playoffs">Schedule and Playoffs</a></li>
+                    </ol>
+                </li>
+                <li><a href="#Keepers">Keepers</a></li>
+                <li><a href="#Draft">Draft</a>
+                    <ol type="1">
+                        <li><a href="#Draft Order">Draft Order</a></li>
+                        <li><a href="#Draft Pick Trading">Draft Pick Trading</a></li>
+                    </ol>
+                </li>
+                <li><a href="#College Draft">College Draft</a></li>
+                <li><a href="#Rule Changes and General Purpose Rulings">Rule Changes and General Purpose Rulings</a>
+                </li>
+            </ol>
+        </div>
+    </center>
+
+    <h2 id="Ownership">A. Ownership</h2>
+    <p>The league will consist of 12 teams and each team can only have 1 owner. The team owner has ownership of his team
+        as long as he continues to pay the league dues each year and does not mess with the integrity of the league.
     </p>
-    <p>But within that data we can find potentially overlooked players. Most fantasy managers focus on how many points a player had the previous season. But if we
-        want to win in the upcoming season, we need to find players who are going to have breakout seasons. By looking at Fantasy Points per Touch, we can potentially
-        discover overlooked players who perform well with their touches, and if are in better standing with their teams in the upcoming season they may have breakout seasons. 
-        Conversely, we can find players who got lots of touches and didn't make as much of them as their peers. These inefficent players may be due for regression for the upcoming season
-        as the coaches may start to limit their opportunities. We may want to avoid these inefficent players.
-    </p>
-    <p>
-        The following charts step through the three primary positions where touches matter: Running Back, Wide Receiver, and Tight End. The charts show a scatterplot of their touches and fantasy points scored.
-        The size of their circles are a visual representation of their Fantasy Points per Touch ratio. The bigger the circle the more efficient. On each chart I've highlighted the Most and Least Efficent Players.
-        You can also hover over the different circles to find out which players lie where and additional details. 
-    </p>
+    <h3 id="New Owners">A.1 New Owners</h3>
+    <p>When a spot opens up in the league for a new owner, the person highest on the league waitlist will have the first
+        claim to the open team. The commissioner will keep track of the current waitlist. Because of the large number of
+        people already on the current waitlist, no new names will be added to the waitlist until the waitlist is
+        completely exhausted.</p>
+    <P>New owners will not be eligible for keepers in their first year. They will receive the minimum number of lottery
+        balls for the draft lottery of their first year. </P>
+    <p>New owners will not inherit any of the pick trading obligations done from their team during the previous season.
+        The trades existing owners made with teams that now have new owners will be honored in the following ways:</p>
+    <ul>
+        <li>If an existing owner is owed a draft pick from a team who now has a new owner, the existing owner will
+            receive a compensatory pick. The compensatory pick will take place after the last pick of the round in which
+            the existing owner was due the pick. To make up for the extra pick, the owner who received the compensatory
+            pick will lose a pick in the lowest round in which they have a pick available. </li><br>
+        <li>If an existing owner owes a draft pick to a team with a new owner, the existing owner will still forfeit
+            their pick during the round. To make up for the loss of the pick, the owner will receive a compensatory pick
+            after the last round of the draft. </li>
+    </ul>
+    <p>Current Waitlist Order:</p>
+    <ol>
+        <li>Tom</li>
+        <li>Duga</li>
+        <li>Pierre</li>
+        <li>Gobbi</li>
+        <li>Ian</li>
+        <li>Jarod</li>
+    </ol>
+    <h3 id="Expelling Owners">A.2 Expelling Owners</h3>
+    <p>League owners can be voted out of the league if they commit rules violations. Any owners caught cheating or
+        colluding with other owners will be subject to dismissal from the league pending league vote. If the alleged
+        cheater receives a majority vote in favor of dismissing them from the league, they will forfeit the rights to
+        the team and will never be allowed back into the league. </p>
     <br>
-    <button class="button" type="button"
-    onclick="window.location.href='https://johndaneau22.github.io/johndaneau.github.io/rb.html';">Let's Start with the Running Backs </button>
+    <h2 id="Buy-in and Prize Payouts">B. Buy-in and Prize Payouts</h2>
+    <h3>League Buy-in</h3>
+    <p>The league buy-in is <b>$200</b> per season. Each owner must pay the buy-in on the day of the draft. If they do
+        not have
+        the money the day of the draft, they need to work out a plan for making payment to the commissioner. Owners who
+        haven’t paid the league buy-in by week 4 will have their teams locked. If the owner doesn’t pay the league
+        buy-in by the end of the week 16, they will be automatically dismissed from the league. </p>
+    <h3>Payouts</h3>
+    <ul>
+        <li>1st Place: $1150</li>
+        <li>2nd Place: $450</li>
+        <li>3rd Place: $250</li>
+        <li>1st Place (regular season): $100</li>
+        <li>Regular Season High PF + PA: $100</li>
+        <li>Regular Season High PF: $50</li>
+        <li>Weekyly High Points (up to week 14): $25</li>
+    </ul>
+    <br>
+    <h2 id="League Settings">C. League Settings</h2>
+    <p>We use ESPN.COM to host the Duckets League. The settings we have agreed to for ESPN.COM league is below. Unless
+        agreed upon by league vote, ESPN's decisions on scoring, roster elibility, and injury designations will be
+        honored. To find the league settings: <a
+            href="https://fantasy.espn.com/football/league/settings?leagueId=482271&view=summary">ESPN League Settings
+            for Duckets</a></p>
+    <h3 id="Basic Settings">C.1 Basic Settings</h3>
+    <img src=images/Basic_Settings.jpg>
+    <h3 id="Rosters">C.2 Rosters</h3>
+    <img src=images/Roster.jpg>
+    <h3 id="Scoring">C.3 Scoring</h3>
+    <img src=images/Scoring_1.jpg>
+    <img src=images/Scoring_2.jpg>
+    <h3 id="Transactions">C.4 Transactions</h3>
+    <img src=images/Transactions.jpg>
+    <p>For trades, each owner involved in a trade should make an effort to alert the league of pending trades using text
+        message, email, or Kik chat. If a trade involves a draft pick, the draft picks included should be posted on the
+        league message board. </p>
+    <p><b>Trade Deadline:</b> The trade deadline is set between Week 11 and Week 12 each year. </p>
+    <h3 id="Schedule and Playoffs">C.5 Schedule and Playoffs</h3>
+    <img src=images/Schedule.jpg>
+    <p><b>Randomizing the Schedule:</b>Each year, ESPN uses the exact same schedule from the year before. In order to
+        avoid playing the same teams the same weeks each year, the commissioner resets the schedule prior to the Draft
+        Order Lottery taking place.</p>
+    <br>
+    <h2 id="Keepers">D. Keepers</h2>
+    <p>Each returning owner can keep up to 3 players from their roster from the previous year. The player can not have
+        been kept or drafted in Rounds 1 or 2 the previous season.</p>
+    <h3>Keeper's Round Value</h3>
+    <p>Each keeper will cost the owner a pick that is two rounds higher from where the player was drafted, or kept,
+        during the previous season’s draft. <b>Example:</b> If a player was drafted, or kept, the previous season in the
+        9th
+        round, the owner would give up a 7th round pick to keep the player this season.</p>
+    <p>If a free agent pickup from the previous season is kept, they will cost the owner a 15th round pick.</p>
+    <p>If the owner has traded away their pick for that round, or used it for another keeper or rookie, then they must
+        use a pick
+        that is higher than the one the player was originally eligible to be kept for. <b>Example:</b> An owner has a
+        player
+        that is eligible to be kept in the 6th round. However, they traded away their 6th round pick. The owner would
+        then need to give up their 5th round pick to keep the player. </p>
+    <p>If during the previous season’s draft an owner was forced to use a higher round pick for a keeper because of a
+        trade obligation, or another keeper or rookie costing the same round pick, the player costs the owner a pick
+        that is 2
+        rounds higher than where they COULD HAVE kept the player the previous season. <b>Example:</b> During the
+        previous
+        season’s draft, an owner has a player that would cost a 10th round pick. However, they’ve traded the 10th round
+        pick and are forced to give up a 9th round pick to keep the player. During the current season’s draft, the owner
+        wants to keep the player again. Although the player was kept for a 9th round pick the previous season, they were
+        eligible to be kept for a 10th. Because of this, this season the player can be kept for an 8th round pick. </p>
+    <p>NOTE: It is the commissioner’s responsibility to keep track of players who were kept in rounds that are higher
+        than where they were eligible to be kept. </p>
+    <h3>Declaring Keepers</h3>
+    <p>As the draft date approaches, the commissioner will ask the owners to broadcast who they are planning to keep for
+        the upcoming draft. <b>The official deadline to declare keepers is</b> <b>7 days before the draft</b>. The only
+        changes
+        that would be allowed following the deadline would be if one of your keepers was Injured, Retired, Suspended,
+        (I.e. if something else occurred during that week where it looks like your keeper won't be starting Week 1 of
+        the NFL season.) </p>
+    <br>
+    <h2 id="Draft">E. Draft</h2>
+    <p>Each year we will hold an in-person draft. The commissioner will poll the league on a date that best fits
+        everyone's schedule. In the event an owner can't make the draft, they have the option of appointing and proxy to
+        attend the draft in their absence.</p>
+    <h3 id="Draft Order">E.1 Draft Order</h3>
+    <p>The draft order is determined by a weighted lottery which must take place in front of at least 3 owners and the
+        commissioner. </p>
+    <p><b>Draft Order Weighting:</b> The number of draft lottery balls a team received is related to their finish during
+        the previous season. The distribution of lottery balls is as follows:</p>
+    <ul>
+        <li>1 Ball: Playoff Champion and Runner-up</li>
+        <li>2 Balls: Playoff 3rd and 4th place finishers</li>
+        <li>3 Balls: Loser in the first round of playoffs</li>
+        <li>4 Balls: Teams that finish 11th and 12th in Regular Season</li>
+        <li>5 Balls: Teams that finish 9th and 10th in Regular Season</li>
+    </ul>
+    <p><b>Draft Time Clock:</b>Each owner is expected to make their picks within 2 minutes. We will not maintain a stop
+        clock unless an owner is consistently going over the allotted 2 minutes. In the event the owner is still going
+        over 2 minutes, we will criticize them mercilessly and they need to take shots.
+    </p>
+    <h3 id="Draft Pick Trading">E.2 Draft Pick Trading</h3>
+    <p>Each season an owner can TRADE AWAY one draft pick in rounds 1-3, one in rounds 4-9, and one in rounds 10-17.
+    </p>
+    <p>Each season an owner can TRADE FOR one draft pick in rounds 1-3, one in rounds 4-9, and one in rounds 10-17.</p>
+    <p>In order to ensure teams have 17 players at the end of a draft, an owner who traded away a draft pick will
+        receive a compensatory pick. The Compensatory Rounds will take place after round 17. For owners who traded for a
+        pick, they will make picks until they have 17 players on their team.
+    </p>
+    <p><b>Other Draft Notes</b></p>
+    <ul>
+        <li>If an owner has two picks in a round due to trading, they use their own pick first for a keeper or college
+            player. </li>
+        <li>An owner can not trade for or trade away a pick beyond the immediate next season.</li>
+        <li>The Compensatory Rounds begin after Round 17. For any owners that haven't picked 17 players yet, they
+            receive picks in the compensatory rounds. The Compensatory Rounds just continue in the same snake fashion
+            and order as the normal rounds.</li>
+    </ul>
+    <h2 id="College Draft">F. College Draft</h2>
+    <p><b>Rules:</b></p>
+    <ul>
+        <li>After draft we hold an additional one round college draft. This can be done day of or in a text message
+            chain the week following the draft.</li><br>
+        <li>The College Draft Order is a separate lottery where each owner gets a single ball to determine order.</li>
+        <br>
+        <li>You can draft any player in college regardless of his class (Fresh, Soph, etc).</li><br>
+        <li>We will maintain a list of college players drafted and who owns their rights.</li><br>
+        <li>When a college player you have drafted is a rookie, you can keep them for a 10th round pick.</li><br>
+        <li>If you have multiple college players become rookies the same year, you can keep all of them.</li><br>
+        <li>If you don't have a 10th round pick or are keeping multiple players in the 10th round, you will need to use
+            an earlier pick to keep the college player (same as keepers). In this case, we will maintain the college
+            player's keeper round value as 10 for the next season and they will be able to be kept for an 8th the
+            following season.</li><br>
+        <li>When you keep them their rookie years, they would not count against your 3 keeper limit.</li><br>
+        <li>After their rookie year, they would become regular keepers in subsequent years and would count against your
+            3 keeper limit.</li><br>
+        <li>You can't trade College Players rights or the players themselves until after the draft when you keep them.
+        </li>
+    </ul>
+    <br>
+    <h2 id="Rule Changes and General Purpose Rulings">G. Rule Changes and General Purpose Rulings</h2>
+    <h3>Rule Changes</h3>
+    <p>If an owner would like to propose a new rule or a change to an existing rule, they must let the commissioner know
+        during the offseason and prior to the draft. On draft day, the commissioner will ask the other owners to vote on
+        the proposed rule changes prior to the draft beginning. If a majority of the owners vote in favor of the rule
+        change, then it is adopted for the upcoming season. </p>
+    <h3>General Purpose Rulings</h3>
+    <p>Any ruling that needs to be made and is not is not covered in this rulebook should be decided by league vote. In
+        the event the league is completely split on the vote, the commissioner will seek the opinion of an objective
+        individual from outside of the league. </p>
+
 </body>
+
+
 
 
 
